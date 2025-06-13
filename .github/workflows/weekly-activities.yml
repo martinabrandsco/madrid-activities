@@ -4,6 +4,8 @@ on:
   schedule:
     # Runs at 6 PM Madrid time (UTC+1/UTC+2) every Monday
     - cron: '0 16 * * 1'  # 16:00 UTC = 18:00 Madrid time (summer) or 17:00 (winter)
+    # Runs at 1 PM Madrid time (UTC+1/UTC+2) every Thursday
+    - cron: '0 11 * * 4'  # 11:00 UTC = 13:00 Madrid time (summer) or 12:00 (winter)
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
